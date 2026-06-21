@@ -11,7 +11,7 @@
             <div class="fundo"></div>
             <div class="txtop"><h1>Top 10 musicas de 2013</h1></div>
             <div class="containerprincipal">
-                <div class="subconteudo">
+                <div id="subcont" class="subconteudo">
                     <div class="imagemalbum">
                         <img id="imagemalbum" alt="Imagem do album" src="imgs/Mirrors_(Justin_Timberlake_song).png">
                     </div>
@@ -31,6 +31,12 @@
         <audio id="audio">
             <source id="source" src="musica/Thrift-shop.mp3" type="audio/mp3">
         </audio>
+        <footer>
+            <div id="botaodesc" class="">
+            <button class="descr" onclick="document.getElementById('botaodesc').classList.toggle('irlado');document.getElementById('pdesc').classList.toggle('aparecer');">Detalhes</button>
+            <p id="pdesc">Todo esse projeto foi feito sem código de IA generativa</p>
+        </div>
+        </footer>
     </body>
     <script src="javascript.js" defer></script>
 </html>

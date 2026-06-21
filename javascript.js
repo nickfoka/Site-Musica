@@ -5,6 +5,7 @@ const imagemalbum = document.getElementById("imagemalbum");
 const nomemusica = document.getElementById("nomemusica");
 const source = document.getElementById("source");
 const audio = document.getElementById("audio");
+const subconteudo = document.getElementById("subcont");
 const musicas = ["Thrift Shop","Blurred Lines","Radioactive","Harlem Shake",
     "Can't Hold Us","Mirrors","Just Give Me a Reason","When I Was Your Man","Cruise","Roar"];
 const dirimagens = ["imgs/Macklemore_-_Thrift_Shop.jpg","imgs/Robin_Thicke_Blurred_Lines_Cover.svg.png","imgs/Imagine_Dragons_-__Radioactive__(Single).jpg","imgs/HarlemShake.jpg",
