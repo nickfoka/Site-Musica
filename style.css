@@ -18,7 +18,7 @@
     --bg-sub: rgba(0, 0, 0, 0.6);
 }
 body {
-	background: var(--bg-gradient);
+	background-image: var(--bg-gradient);
 	background-size: 400% 400%;
     background-repeat: no-repeat;
     animation-name: movfundo;
@@ -212,6 +212,32 @@ body {
 }
 .aparecer{
     display: block !important;
+}
+.imagemesque img{
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.segredoimg img{
+    opacity: 1;
+}
+#botaosecreto {
+    display: none;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0.3;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+#botaosecreto button{
+    padding: 5px;
+    border-radius: 5px;
 }
 @keyframes movfundo {
     0% {background-size: 400% 400%;}
