@@ -1,6 +1,8 @@
 
+const root = document.documentElement;
 const botao = document.querySelector('.botao');
 const body = document.body;
+const esque = document.querySelector('.imagemesque');
 const botaoplay = document.getElementById("botaoplay");
 const botaoplayimg = document.getElementById("botaoplayimg");
 const imagemalbum = document.getElementById("imagemalbum");
@@ -26,6 +28,7 @@ source.src = audios[i];
 if (localStorage.getItem("dark") == "on") {
     body.classList.add("mododark");
     botao.setAttribute("src", "icons/bedtime_40dp_000000_FILL0_wght400_GRAD0_opsz40.png");
+    document.getElementById("botaosecreto").style.display = "block";
 }
 function proxmusica() {
     i = i + 1;
@@ -80,10 +83,17 @@ function mododark() {
     body.classList.toggle("mododark");
     if (body.classList.contains("mododark")) {
         botao.setAttribute("src", "icons/bedtime_40dp_000000_FILL0_wght400_GRAD0_opsz40.png");
+        document.getElementById("botaosecreto").style.display = "block";
         localStorage.setItem("dark", "on");
     }
     else if (!(body.classList.contains("mododark"))) {
         localStorage.setItem("dark", "off");
+        document.getElementById("botaosecreto").style.display = "none";
         botao.setAttribute("src", "icons/sunny_40dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.png");
+    }
+}
+function segredo() {
+    if (localStorage.getItem("dark") == "on") {
+        esque.classList.toggle('segredoimg');
     }
 }
